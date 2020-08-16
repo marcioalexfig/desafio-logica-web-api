@@ -1,4 +1,4 @@
-# aplicação spring boot <br><br>
+# aplicação spring boot
 No STS IDE: Executar como Aplicação Spring Boot => ApiMetaApplication.java <br><br>
 http://localhost:8080/contatos/ <br><br>
 http://localhost:8080/contatos/?page=4&size=100 <br><br>
