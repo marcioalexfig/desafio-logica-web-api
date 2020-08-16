@@ -1,5 +1,3 @@
-# desafio-logica-web-api
-
 # aplicação spring boot <br><br>
 No STS IDE: Executar como Aplicação Spring Boot => ApiMetaApplication.java <br><br>
 http://localhost:8080/contatos/ <br><br>
