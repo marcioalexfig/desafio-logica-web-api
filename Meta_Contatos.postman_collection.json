@@ -1,0 +1,158 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Meta Contatos",
+		"_postman_id": "a7bf4872-6b49-602b-923c-cff7e5db1785",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/contatos",
+			"request": {
+				"url": "http://localhost:8080/contatos/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic bWV0YTpzZW5oYW1ldGE=",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\"      : \"Contato 5\",\r\n    \"canal\"\t\t: \"telefone\",\r\n    \"valor\"     : \"888888888\",\r\n    \"obs\"\t\t: \"teste obs contato 5\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/contatos/?page=3&size=100",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/contatos/?page=0&size=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"contatos",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "size",
+							"value": "2",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic bWV0YTpzZW5oYW1ldGE=",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/contatos/5f3715587369f926e7aa5975",
+			"request": {
+				"url": "http://localhost:8080/contatos/5f37ed165462586a1857803d",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic bWV0YTpzZW5oYW1ldGE=",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/contatos/5f3715587369f926e7aa5975",
+			"request": {
+				"url": "http://localhost:8080/contatos/5f381b6fee173d202518781d",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic bWV0YTpzZW5oYW1ldGE=",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/contatos/",
+			"request": {
+				"url": "http://localhost:8080/contatos/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic bWV0YTpzZW5oYW1ldGE=",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/contatos/5f36ee3ef314cd201947cd75",
+			"request": {
+				"url": "http://localhost:8080/contatos/5f37ed165462586a1857803d",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic bWV0YTpzZW5oYW1ldGE=",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\"      : \"Contato Alex\", \r\n    \"canal\"\t\t: \"email\",\r\n    \"valor\"     : \"contato53@meta.com\",\r\n    \"obs\"\t\t: \"teste obs contato 53\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
