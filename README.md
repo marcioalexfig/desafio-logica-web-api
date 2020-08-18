@@ -1,3 +1,5 @@
+# login: meta / senha: senhameta
+
 # aplicação spring boot
 No STS IDE: Executar como Aplicação Spring Boot => ApiMetaApplication.java <br><br>
 http://localhost:8080/contatos/ <br><br>
